@@ -1,4 +1,4 @@
-# 🧮 Exercícios de Lógica em JavaScript (19 Itens)
+# 🧮 Exercícios de Lógica em JavaScript (LISTA 1)
 
 Este projeto contém **19 exercícios básicos de lógica de programação** resolvidos com **HTML, CSS e JavaScript puro (ES6)**.  
 Tudo foi estruturado para rodar diretamente no navegador — basta abrir o arquivo `index.html`.
