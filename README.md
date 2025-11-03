@@ -66,6 +66,6 @@ O layout é limpo, responsivo e escuro, ideal para leitura prolongada.
 
 ## ✨ Autor
 
-Feito com 💻 e ☕ por **[Seu Nome Aqui]**  
+Feito com 💻 e ☕ por **[Bruno Lopes]**  
 Sinta-se livre para modificar e testar à vontade!
 
