@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercícios de Lógica com JavaScript</title>    
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Exercícios de Lógica com JavaScript</h1>
+    <p class="lead">Coleção com 19 exercícios resolvidos no navegador. Preencha os campos e clique em "Calcular/Executar".</p>
+    <p class="warn">Obs.: No exercício 11 foi assumido <strong>raio</strong> para o cálculo da área do círculo.</p>
+  </header>
+
+  <main class="grid">
+    <!-- 1 -->
+    <section class="card">
+      <h2>1) Saudação <small>prompt → mensagem</small></h2>
+      <button class="primary" onclick="ex1()">Executar</button>
+      <div id="out1" class="out"></div>
+    </section>
+
+    <!-- 2 -->
+    <section class="card">
+      <h2>2) Soma de dois números</h2>
+      <div class="row">
+        <div><label>Número 1</label><input id="ex2a" type="number" step="any" /></div>
+        <div><label>Número 2</label><input id="ex2b" type="number" step="any" /></div>
+      </div>
+      <button class="primary" onclick="ex2()">Calcular</button>
+      <div id="out2" class="out"></div>
+    </section>
+
+    <!-- 3 -->
+    <section class="card">
+      <h2>3) Subtração (a − b)</h2>
+      <div class="row">
+        <div><label>Minuendo (a)</label><input id="ex3a" type="number" step="any" /></div>
+        <div><label>Subtraendo (b)</label><input id="ex3b" type="number" step="any" /></div>
+      </div>
+      <button class="primary" onclick="ex3()">Calcular</button>
+      <div id="out3" class="out"></div>
+    </section>
+
+    <!-- 4 -->
+    <section class="card">
+      <h2>4) Multiplicação</h2>
+      <div class="row">
+        <div><label>Valor 1</label><input id="ex4a" type="number" step="any" /></div>
+        <div><label>Valor 2</label><input id="ex4b" type="number" step="any" /></div>
+      </div>
+      <button class="primary" onclick="ex4()">Calcular</button>
+      <div id="out4" class="out"></div>
+    </section>
+
+    <!-- 5 -->
+    <section class="card">
+      <h2>5) Divisão</h2>
+      <div class="row">
+        <div><label>Dividendo</label><input id="ex5a" type="number" step="any" /></div>
+        <div><label>Divisor</label><input id="ex5b" type="number" step="any" /></div>
+      </div>
+      <button class="primary" onclick="ex5()">Calcular</button>
+      <div id="out5" class="out"></div>
+      <p class="hint">Tratamos divisão por zero.</p>
+    </section>
+
+    <!-- 6 -->
+    <section class="card">
+      <h2>6) Sucessor</h2>
+      <label>Número</label>
+      <input id="ex6a" type="number" step="1"/>
+      <button class="primary" onclick="ex6()">Calcular</button>
+      <div id="out6" class="out"></div>
+    </section>
+
+    <!-- 7 -->
+    <section class="card">
+      <h2>7) Antecessor</h2>
+      <label>Número</label>
+      <input id="ex7a" type="number" step="1"/>
+      <button class="primary" onclick="ex7()">Calcular</button>
+      <div id="out7" class="out"></div>
+    </section>
+
+    <!-- 8 -->
+    <section class="card">
+      <h2>8) Área do retângulo</h2>
+      <div class="row">
+        <div><label>Base</label><input id="ex8a" type="number" step="any"/></div>
+        <div><label>Altura</label><input id="ex8b" type="number" step="any"/></div>
+      </div>
+      <button class="primary" onclick="ex8()">Calcular</button>
+      <div id="out8" class="out"></div>
+    </section>
+
+    <!-- 9 -->
+    <section class="card">
+      <h2>9) Área do triângulo</h2>
+      <div class="row">
+        <div><label>Base</label><input id="ex9a" type="number" step="any"/></div>
+        <div><label>Altura</label><input id="ex9b" type="number" step="any"/></div>
+      </div>
+      <button class="primary" onclick="ex9()">Calcular</button>
+      <div id="out9" class="out"></div>
+    </section>
+
+    <!-- 10 -->
+    <section class="card">
+      <h2>10) Área do quadrado</h2>
+      <label>Lado</label>
+      <input id="ex10a" type="number" step="any"/>
+      <button class="primary" onclick="ex10()">Calcular</button>
+      <div id="out10" class="out"></div>
+    </section>
+
+    <!-- 11 -->
+    <section class="card">
+      <h2>11) Área do círculo <small>usa o raio</small></h2>
+      <label>Raio</label>
+      <input id="ex11a" type="number" step="any"/>
+      <button class="primary" onclick="ex11()">Calcular</button>
+      <div id="out11" class="out"></div>
+    </section>
+
+    <!-- 12 -->
+    <section class="card">
+      <h2>12) Média de 3 notas</h2>
+      <div class="row">
+        <div><label>Nota 1</label><input id="ex12a" type="number" step="any"/></div>
+        <div><label>Nota 2</label><input id="ex12b" type="number" step="any"/></div>
+      </div>
+      <label>Nota 3</label>
+      <input id="ex12c" type="number" step="any"/>
+      <button class="primary" onclick="ex12()">Calcular</button>
+      <div id="out12" class="out"></div>
+    </section>
+
+    <!-- 13 -->
+    <section class="card">
+      <h2>13) Dobro de um inteiro</h2>
+      <label>Número inteiro</label>
+      <input id="ex13a" type="number" step="1"/>
+      <button class="primary" onclick="ex13()">Calcular</button>
+      <div id="out13" class="out"></div>
+    </section>
+
+    <!-- 14 -->
+    <section class="card">
+      <h2>14) Parte inteira de um número real</h2>
+      <label>Número real</label>
+      <input id="ex14a" type="number" step="any"/>
+      <button class="primary" onclick="ex14()">Obter</button>
+      <div id="out14" class="out"></div>
+    </section>
+
+    <!-- 15 -->
+    <section class="card">
+      <h2>15) IMC</h2>
+      <div class="row">
+        <div><label>Peso (kg)</label><input id="ex15a" type="number" step="any"/></div>
+        <div><label>Altura (m)</label><input id="ex15b" type="number" step="any"/></div>
+      </div>
+      <button class="primary" onclick="ex15()">Calcular</button>
+      <div id="out15" class="out"></div>
+      <p class="hint">IMC = peso / (altura²)</p>
+    </section>
+
+    <!-- 16 -->
+    <section class="card">
+      <h2>16) Desconto de 10%</h2>
+      <div class="row">
+        <div><label>Produto</label><input id="ex16a" type="text" placeholder="Nome do produto"/></div>
+        <div><label>Preço (R$)</label><input id="ex16b" type="number" step="any"/></div>
+      </div>
+      <button class="primary" onclick="ex16()">Calcular</button>
+      <div id="out16" class="out"></div>
+    </section>
+
+    <!-- 17 -->
+    <section class="card">
+      <h2>17) Média de idades (3 pessoas)</h2>
+      <div class="row">
+        <div><label>Nome 1</label><input id="ex17n1" type="text"/></div>
+        <div><label>Idade 1</label><input id="ex17a1" type="number" step="1"/></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 2</label><input id="ex17n2" type="text"/></div>
+        <div><label>Idade 2</label><input id="ex17a2" type="number" step="1"/></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 3</label><input id="ex17n3" type="text"/></div>
+        <div><label>Idade 3</label><input id="ex17a3" type="number" step="1"/></div>
+      </div>
+      <button class="primary" onclick="ex17()">Calcular</button>
+      <div id="out17" class="out"></div>
+    </section>
+
+    <!-- 18 -->
+    <section class="card">
+      <h2>18) Metros → centímetros e milímetros</h2>
+      <label>Valor (m)</label>
+      <input id="ex18a" type="number" step="any"/>
+      <button class="primary" onclick="ex18()">Converter</button>
+      <div id="out18" class="out"></div>
+    </section>
+
+    <!-- 19 -->
+    <section class="card">
+      <h2>19) Hipotenusa (triângulo retângulo)</h2>
+      <div class="row">
+        <div><label>Cateto (base)</label><input id="ex19a" type="number" step="any"/></div>
+        <div><label>Cateto (altura)</label><input id="ex19b" type="number" step="any"/></div>
+      </div>
+      <button class="primary" onclick="ex19()">Calcular</button>
+      <div id="out19" class="out"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito em JavaScript puro! BRUNO LOPES</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
