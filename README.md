@@ -48,3 +48,24 @@ Tudo foi estruturado para rodar diretamente no navegador — basta abrir o arqui
 
 ## 🧠 Estrutura do Projeto
 
+
+---
+
+## 🖼️ Interface
+
+A página é composta por **cards individuais** para cada exercício, com campos de entrada, botões e áreas de resultado.  
+O layout é limpo, responsivo e escuro, ideal para leitura prolongada.
+
+---
+
+## ⚠️ Observação
+
+> No exercício 11, foi assumido **raio** para o cálculo da área do círculo, pois “base e altura” não se aplicam a figuras circulares.
+
+---
+
+## ✨ Autor
+
+Feito com 💻 e ☕ por **[Seu Nome Aqui]**  
+Sinta-se livre para modificar e testar à vontade!
+
